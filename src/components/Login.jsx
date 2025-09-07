@@ -41,7 +41,7 @@ const Login = () => {
             Email
           </Form.Label>
           <Col sm={8}>
-            <Form.Control type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} value={email} />
+            <Form.Control type="email" name="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} value={email} />
           </Col>
         </Form.Group>
 
@@ -50,7 +50,7 @@ const Login = () => {
             Contraseña
           </Form.Label>
           <Col sm={8}>
-            <Form.Control type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} value={password} />
+            <Form.Control type="password" name="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} value={password} />
           </Col>
         </Form.Group>
         <Form.Group as={Row} className="mb-3">
